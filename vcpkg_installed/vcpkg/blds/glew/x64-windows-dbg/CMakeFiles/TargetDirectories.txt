@@ -1,8 +1,0 @@
-C:/Users/Aidan/source/repos/mas-engine/vcpkg_installed/vcpkg/blds/glew/x64-windows-dbg/CMakeFiles/glew.dir
-C:/Users/Aidan/source/repos/mas-engine/vcpkg_installed/vcpkg/blds/glew/x64-windows-dbg/CMakeFiles/glew_s.dir
-C:/Users/Aidan/source/repos/mas-engine/vcpkg_installed/vcpkg/blds/glew/x64-windows-dbg/CMakeFiles/uninstall.dir
-C:/Users/Aidan/source/repos/mas-engine/vcpkg_installed/vcpkg/blds/glew/x64-windows-dbg/CMakeFiles/edit_cache.dir
-C:/Users/Aidan/source/repos/mas-engine/vcpkg_installed/vcpkg/blds/glew/x64-windows-dbg/CMakeFiles/rebuild_cache.dir
-C:/Users/Aidan/source/repos/mas-engine/vcpkg_installed/vcpkg/blds/glew/x64-windows-dbg/CMakeFiles/list_install_components.dir
-C:/Users/Aidan/source/repos/mas-engine/vcpkg_installed/vcpkg/blds/glew/x64-windows-dbg/CMakeFiles/install.dir
-C:/Users/Aidan/source/repos/mas-engine/vcpkg_installed/vcpkg/blds/glew/x64-windows-dbg/CMakeFiles/install/local.dir

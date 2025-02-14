@@ -1,9 +1,0 @@
-# ninja log v6
-10	86	7611879817213317	CMakeFiles/glew.dir/C_/Users/Aidan/source/repos/mas-engine/vcpkg_installed/vcpkg/blds/glew/src/glew-80f5997feb.clean/build/glew.rc.res	4b0946f88f1b1550
-21	96	7611879817315961	CMakeFiles/glew_s.dir/C_/Users/Aidan/source/repos/mas-engine/vcpkg_installed/vcpkg/blds/glew/src/glew-80f5997feb.clean/build/glew.rc.res	bf2b2903c2896912
-17	14127	7611879817282174	CMakeFiles/glew_s.dir/C_/Users/Aidan/source/repos/mas-engine/vcpkg_installed/vcpkg/blds/glew/src/glew-80f5997feb.clean/src/glew.c.obj	2b274bc7573bdba5
-14128	14202	7611879958392843	lib/libglew32.lib	eb026a3a42021b18
-5	14721	7611879817166833	CMakeFiles/glew.dir/C_/Users/Aidan/source/repos/mas-engine/vcpkg_installed/vcpkg/blds/glew/src/glew-80f5997feb.clean/src/glew.c.obj	966b248e086dc21
-14726	14873	7611879965619905	bin/glew32.dll	aa49e565d783dc8a
-14726	14873	7611879965619905	lib/glew32.lib	aa49e565d783dc8a
-14873	14934	7611879965838615	CMakeFiles/install.util	ca4ec3c1acf9cc36
