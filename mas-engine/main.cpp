@@ -1,31 +1,62 @@
-#include <glm/glm.hpp>
-#include <glm/gtc/matrix_transform.hpp>
+#include <gl/glew.h>
+#include <GLFW/glfw3.h>
+
+#include <array>
 #include <iostream>
+
+unsigned int shaderProgram{};
+
+constexpr auto vertexShaderSource = R"()";
+
+constexpr auto fragmentShaderSource = R"()";
+
+constexpr auto squareVertices = std::array{
+	-0.5f, 0.5f, 0.0f, // Top-left
+	0.5f, 0.5f, 0.0f, // Top-right
+	0.5f, 0.5f, 0.0f, // Top-right
+	0.5f, -0.5f, 0.0f, // Bottom-right
+	0.5f, -0.5f, 0.0f, // Bottom-right
+	-0.5f, -0.5f, 0.0f, // Bottom-left
+	-0.5f, -0.5f, 0.0f, // Bottom-left
+	-0.5f, 0.5f, 0.0f, // Top-left
+};
+
+void framebufferSizeChanged(GLFWwindow* window, int width, int height);
+void render(GLFWwindow* window);
 
 int main()
 {
-	    // Define a vector
-    glm::vec3 myVector(1.0f, 2.0f, 3.0f);
-    std::cout << "Original Vector: (" << myVector.x << ", " << myVector.y << ", " << myVector.z << ")" << std::endl;
+	if (!glfwInit())
+	{
+		std::cerr << "Failed to initialize GLFW" << std::endl;
+	}
 
-    // Define a 4x4 identity matrix
-    glm::mat4 myMatrix = glm::mat4(1.0f);
+	glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 3);
+	glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 3);
+	glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
 
-    // Translate the matrix
-    myMatrix = glm::translate(myMatrix, glm::vec3(1.0f, 1.0f, 1.0f));
+	const GLFWvidmode* VideoMode = glfwGetVideoMode(glfwGetPrimaryMonitor());
+	const auto ScreenHeight = VideoMode->height;
 
-    // Rotate the matrix around the Z-axis
-    myMatrix = glm::rotate(myMatrix, glm::radians(45.0f), glm::vec3(0.0f, 0.0f, 1.0f));
+	GLFWwindow* window = glfwCreateWindow(ScreenHeight / 2, ScreenHeight / 2, "OpenGL + GLFW", NULL, NULL);
 
-    // Scale the matrix
-    myMatrix = glm::scale(myMatrix, glm::vec3(2.0f, 2.0f, 2.0f));
+	if (window == NULL)
+	{
+		std::cerr << "Failed to create GLFW window" << std::endl;
+		glfwTerminate();
+		return -1;
+	}
 
-    // Multiply the matrix by the vector
-    glm::vec4 tempVector = glm::vec4(myVector, 1.0f);
-    glm::vec4 resultVector = myMatrix * tempVector;
+	if (glewInit() != GLEW_OK)
+	{
+		std::cerr << "Failed to initialize GLEW" << std::endl;
+		glfwTerminate();
+		return -1;
+	}
 
-    // Print the result
-    std::cout << "Transformed Vector: (" << resultVector.x << ", " << resultVector.y << ", " << resultVector.z << ")" << std::endl;
 
-    return 0;
+
+
 }
+
+
