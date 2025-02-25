@@ -1,0 +1,34 @@
+#version 330 core
+layout(location = 0) in vec3 vertexPosition_modelspace;
+// for tutorial 04
+// layout(location = 1) in vec3 vertexColor;
+// for tutorial 05
+layout(location = 1) in vec2 vertexUV;
+
+
+// for tutorial 04
+// Output data ; will be interpoloated for each fragment
+// out vec3 fragmentColor;
+
+// for tutorial 05
+// Output data ; will be interpoloated for each fragment
+out vec2 UV;
+
+
+// Values that stay constant for the whole mesh.
+uniform mat4 MVP;
+
+void main(){
+	// gl_Position.xyz = vertexPosition_modelspace;
+	// gl_Position.w = 1.0;
+	gl_Position = MVP * vec4(vertexPosition_modelspace,1);
+
+	// for tutorial 04
+	// The color of each vertex will be interpolated
+	// to produce the color of each fragment
+	// fragmentColor = vertexColor;
+
+	// for tutorial 05
+	// UV of the vertex. No special space for this one.
+	UV = vertexUV;
+}

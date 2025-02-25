@@ -1,0 +1,25 @@
+#version 330 core
+
+// for tutorial 04
+// in vec3 fragmentColor;
+
+// Interpolated values from the vertex shaders
+in vec2 UV;
+
+// Output data
+out vec3 color;
+
+// Values that stay constant for the whole mesh
+uniform sampler2D myTextureSampler;
+
+void main(){
+	// for tutorial 03 red triangle
+	// color = vec3(1,0,0); // RGB (1,0,0) is red
+
+	// for tutorial 04 colored cube
+	// color = fragmentColor;
+
+	// for tutorial 05 UV
+	// Output color = color of the texture at the specified UV
+	color = texture( myTextureSampler, UV).rgb;
+}

@@ -13,10 +13,60 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="common">
+      <UniqueIdentifier>{550f6c76-5e1c-4a62-853a-7830e506de30}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="shader.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="texture.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="controls.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="objloader.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="vboindexer.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="SimpleFragmentShader.fragmentshader">
+      <Filter>common</Filter>
+    </None>
+    <None Include="SimpleVertexShader.vertexshader">
+      <Filter>common</Filter>
+    </None>
+    <None Include="StandardShading.frag">
+      <Filter>common</Filter>
+    </None>
+    <None Include="StandardShading.vert">
+      <Filter>common</Filter>
+    </None>
+    <None Include=".vimrc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="shader.hpp">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="texture.hpp">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="controls.hpp">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="objloader.hpp">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="vboindexer.hpp">
+      <Filter>common</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
